@@ -3,6 +3,7 @@ React-Native-Location-Search
 * git clone https://github.com/melch-inno/01-react-location.git
 * cd 01-react-location
 * npm install
+* npm install @react-navigation/native @react-navigation/stack --save
 * cd ios && pod install 
 * expo start
 

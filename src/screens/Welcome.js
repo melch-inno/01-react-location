@@ -10,6 +10,7 @@ function Home(props) {
       <Text style={styles.text}>Welcome</Text>
       <TouchableOpacity
         style={styles.buttonContainer}
+
         onPress={() => navigation.navigate('Search')}>
         <Text style={styles.buttonText}>Find Location</Text>
       </TouchableOpacity>
