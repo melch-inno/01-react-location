@@ -1,3 +1,5 @@
+// An array of list of coutries  and country code.
+
 location = {
   "predictions": [
         
