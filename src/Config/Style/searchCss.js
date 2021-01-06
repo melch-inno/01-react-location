@@ -6,7 +6,7 @@ export default StyleSheet.create({
   },
   searchResultsContainer: {
     width: '100%',
-    maxHeight:600,
+    maxHeight:800,
     backgroundColor: '#fff',
     position: 'absolute',
   },

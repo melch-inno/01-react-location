@@ -7,11 +7,15 @@ import {
   TextInput,
   StyleSheet,
   SafeAreaView,
-} from 'react-native';
+} from 'react-native'; // Import all the components used
+
 
 import { Ionicons } from '@expo/vector-icons';
 
+//import country data as json
 import '../Config/Data/item';
+
+//import custom stylesheet from config folder.
 import styles from '../Config/Style/searchCss.js'
 
 
@@ -25,7 +29,7 @@ export default class Search extends Component {
       isShowingResults: false,
     };
   }
-
+// Method called every time when we change the value of the input
   searchLocation = async (text) => {
     this.setState({searchKeyword: text});
     if(text == ""){
@@ -47,6 +51,10 @@ export default class Search extends Component {
       <SafeAreaView style={styles.container}>
         <View style={styles.autocompleteContainer}>
           <View style={styles.autocompleteContainerHeader}>
+
+                {/* Onchange of the text changes the state of the query
+                   which will trigger the Search location method */}
+
               <TextInput
                 placeholder="Location"
                 returnKeyType="search"
@@ -61,12 +69,14 @@ export default class Search extends Component {
               </View>
           </View>
           <View style={styles.seearchDropdown}>
-          
+
+          {/* If results is not empty, flatlist renders items and disply it in a list */}
           {this.state.isShowingResults && (
             <FlatList
               data={this.state.searchResults}
               renderItem={({item, index}) => {
                 return (
+                  
                   <TouchableOpacity
                     style={styles.resultItem}
                       onPress={() => 
@@ -89,6 +99,8 @@ export default class Search extends Component {
         </View>
         </View>
         <View style={styles.dummmy} >
+          
+              {/* the selected country is captured in a set state and displyed in the text below */}
             <Text style={styles.selectedLocation}>{this.state.ChosedLocation}</Text>
         </View>
       </SafeAreaView>
