@@ -1,9 +1,9 @@
 {
-  "name": "05-React-location",
-  "displayName": "05-React-location",
+  "name": "01-React-location",
+  "displayName": "01-React-location",
   "expo": {
-    "name": "05-React-location",
-    "slug": "05-React-location",
+    "name": "01-React-location",
+    "slug": "01-React-location",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
