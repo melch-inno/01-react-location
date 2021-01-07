@@ -6,7 +6,7 @@ export default StyleSheet.create({
   },
   searchResultsContainer: {
     width: '100%',
-    maxHeight:800,
+    maxHeight:700,
     backgroundColor: '#fff',
     position: 'absolute',
   },
@@ -50,8 +50,12 @@ export default StyleSheet.create({
   searchIcon:{
     backgroundColor: 'white',
     borderTopRightRadius:15,
+    height: 50,
     borderBottomRightRadius:15,
-    padding:6,
+    width:'10%',
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    paddingRight:5,
   },
 
   autocompleteContainerHeader:{
