@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { Button } from 'react-native';
+
 import { Text, View, StyleSheet } from 'react-native';
 import { Ionicons, AntDesign } from '@expo/vector-icons';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 
-function CustomHeader(props) {
-    // const [title, setTitle] = useState('title');
-    // const { navigation } = props
 
+function CustomHeader({ navigation }) {
         return (
             <View style={styles.header}>
-                <AntDesign name="left" size={20} color="white" onPress={() => this.props}/>
+                <AntDesign name="left" size={20} color="white" />
+                <TouchableOpacity onPress={() => navigation.goBack()}><Text>something here</Text> </TouchableOpacity>
                 {/* <ion-icon name="arrow-back"></ion-icon> */}
                 <Text style={styles.headerText}> hello </Text>
             </View>
